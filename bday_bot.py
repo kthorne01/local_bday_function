@@ -16,7 +16,7 @@ def send_message(msg):
 def check_birthdays():
     # You can use a dictionary, database, or any other method to store birthdays
     birthdays = {
-        "dear Sister Kayla": "09-01",
+        "dear Sister Kayla": "09-02",
         # Add more friends like: "Name": "MM-DD",
     }
 
@@ -24,7 +24,13 @@ def check_birthdays():
 
     for name, bday in birthdays.items():
         if bday == today:
-            send_message(f"Saints, please join me in wishing our {name} the Happiest of Birthdays on today!!!")
-
+            # send_message(f'Saints, please join me in wishing our {name} the' 
+            #              ' Happiest of Birthdays on today!!!')
+            send_message(f'Hi Saints! My name is AJ and Sister Kayla created me to'
+                         ' remind all of the saints when there is a birthday'
+                         ' to celebrate.\n'
+                         '\nI hope you find me useful and please let Sister'
+                         ' Kayla know if you have any ideas or suggestions on what'
+                         ' to include in my next updates.')
 if __name__ == "__main__":
     check_birthdays()
